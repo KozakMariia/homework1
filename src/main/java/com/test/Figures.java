@@ -14,21 +14,25 @@ public class Figures {
         int number = scan.nextInt();
 
         switch (number) {
-            case 1:
+            case 1: {
                 for (int i = 0; i < 3; i++) {
                     for (int j = 0; j < 5; j++) {
                         System.out.print("* ");
                     }
                     System.out.println();
                 }
+                break;
+        }
 
-            case 2:
+            case 2: {
                 for (int i = 0; i < 5; i++) {
                     System.out.print("\n");
                     for (int j = 0; j < i + 1; j++) {
                         System.out.print("*");
                     }
                 }
+                break;
+            }
             case 3: {
                 int h = 7;
                 for (int i = 0; i < h; i++) {

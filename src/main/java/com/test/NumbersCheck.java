@@ -2,6 +2,7 @@ package com.test;
 
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class NumbersCheck {
 
@@ -19,13 +20,13 @@ public class NumbersCheck {
 
 
         boolean isPrimeNumber = true;
-        for (int i = 1; i < number; i++) {
+        for (int i = 2; i < number; i++) {
             if (number % i == 0){
                 isPrimeNumber = false;
                 break;
             }
         }
-        if (isPrimeNumber == true){
+        if (isPrimeNumber){
             System.out.println("Число просте");
         } else
             System.out.println("Число НЕ просте");

@@ -22,7 +22,7 @@ public class Interval {
             System.out.println("Ваше число знаходиться в проміжку [36..50]");
         else if (number >= 51 && number <= 100)
             System.out.println("Ваше число знаходиться в проміжку [51..100]");
-        else if (number < 0 || number >= 101)
+        else
             System.out.println("Ваше число не знаходиться в проміжку [0..100]");
     }
 }
