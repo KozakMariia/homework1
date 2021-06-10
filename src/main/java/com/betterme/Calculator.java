@@ -1,4 +1,4 @@
-package com.test;
+package com.betterme;
 
 import java.util.Scanner;
 

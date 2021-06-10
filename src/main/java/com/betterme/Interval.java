@@ -1,6 +1,5 @@
-package com.test;
+package com.betterme;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 
