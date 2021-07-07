@@ -2,7 +2,7 @@ package com.betterme;
 
 public class Car {
 
-    int year;
+    private int year;
     String color;
 
     public Car() {

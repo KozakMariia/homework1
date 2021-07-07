@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Book {
 
-    Title title;
-    Author author;
-    Content content;
+    private Title title;
+    private Author author;
+    private Content content;
 
 
-    void  show() {
+    public void show() {
         title.show();
         author.show();
         content.show();
@@ -33,6 +33,10 @@ public class Book {
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
 
+        Description(number);
+    }
+
+    private static void Description(int number) {
         switch (number) {
             case 1: {
                 Title title = new Title("Філософський камінь");
@@ -48,7 +52,7 @@ public class Book {
 
                 Title title = new Title("Таємна кімната");
                 Author author = new Author("Дж. Роулінг");
-                Content content = new Content("Повертається в \"Хогвартс\" після літніх канікул Гаррі Поттер. Жанр твору в теж час диктує \n"  +
+                Content content = new Content("Повертається в \"Хогвартс\" після літніх канікул Гаррі Поттер. Жанр твору в теж час диктує \n" +
                         " свої правила, роблячи розповідь казковим і таємничим, - в підземеллях школи оголошується міфічна тварина. \n " +
                         "Починають пропадати учні маглівського походження. У коридорах все більше говорять про прокляття Салазара Слизерина. \n");
                 Book book = new Book(title, author, content);
@@ -81,6 +85,4 @@ public class Book {
             }
         }
     }
-
-
 }
