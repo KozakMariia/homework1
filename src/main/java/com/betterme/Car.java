@@ -3,7 +3,7 @@ package com.betterme;
 public class Car {
 
     private int year;
-    String color;
+    private String color;
 
     public Car() {
 
