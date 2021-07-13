@@ -9,18 +9,18 @@ public class Book {
     private Content content;
 
 
-    public void show() {
-        title.show();
-        author.show();
-        content.show();
-    }
-
     public Book(Title title, Author author, Content content) {
 
         this.title = title;
         this.author = author;
         this.content = content;
 
+    }
+
+    public void show() {
+        title.show();
+        author.show();
+        content.show();
     }
 
     public static void main(String[] args) {
